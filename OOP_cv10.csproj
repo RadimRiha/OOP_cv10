@@ -53,6 +53,7 @@
     <Content Include="SQL scripts\CreateTables.sql" />
     <Content Include="SQL scripts\FillExample.sql" />
     <Content Include="SQL scripts\DisplayDatabase.sql" />
+    <Content Include="SQL scripts\SelectCommands.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
