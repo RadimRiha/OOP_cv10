@@ -13,6 +13,6 @@ FROM Attendance
 GROUP BY SubjectAbbreviation HAVING count(StudentID) < 3
 
 --best, worst and average grade
-SELECT SubjectAbbreviation, min(Grade) AS BestGrade, max(Grade) AS WorstGrade, avg(cast(Grade AS float)) AS AverageGrade, count(StudentID) AS GradedStudents
+SELECT SubjectAbbreviation, min(Grade) AS BestGrade, max(Grade) AS WorstGrade, avg(Grade) AS AverageGrade, count(StudentID) AS GradedStudents
 FROM Grading 
 GROUP BY SubjectAbbreviation
